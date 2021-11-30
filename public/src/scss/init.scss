@@ -1,3 +1,11 @@
+$container-max-widths: (
+        sm: 540px,
+        md: 720px,
+        lg: 960px,
+        xl: 1140px,
+        xxl: 1320px
+);
+
 @import "node_modules/bootstrap/scss/bootstrap-reboot";
 @import "node_modules/bootstrap/scss/bootstrap-utilities";
 @import "node_modules/bootstrap/scss/bootstrap-grid";
@@ -8,3 +16,41 @@
 @import "node_modules/bootstrap/scss/images";
 @import "node_modules/bootstrap/scss/accordion";
 @import "node_modules/bootstrap/scss/badge";
+
+$dark: #4e5261;
+$medium: #7a849c;
+$blue: #005efc;
+$green: #00b67d;
+
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif;
+  color: $dark;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 16px;
+}
+
+body, p {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+strong {
+  font-weight: 600;
+}
+
+.menu {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+}
