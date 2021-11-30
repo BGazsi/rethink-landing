@@ -4,11 +4,23 @@
   "description": "rethink landing page",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gulp",
+    "watch": "gulp watch"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/BGazsi/rethink-landing.git"
+  },
+  "devDependencies": {
+    "gulp": "github:gulpjs/gulp#v4.0.0",
+    "gulp-clean-css": "^3.10.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^4.1.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.1.3"
   },
   "author": "BGazsi",
   "license": "ISC",
