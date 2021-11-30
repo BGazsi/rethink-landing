@@ -1,0 +1,19 @@
+{
+  "name": "rethink-landing",
+  "version": "1.0.0",
+  "description": "rethink landing page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BGazsi/rethink-landing.git"
+  },
+  "author": "BGazsi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BGazsi/rethink-landing/issues"
+  },
+  "homepage": "https://github.com/BGazsi/rethink-landing#readme"
+}
