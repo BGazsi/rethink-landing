@@ -119,6 +119,10 @@ strong {
 }
 
 .anchor-link {
-  margin-top: -16px;
   padding-top: 16px;
+}
+
+a.unstyled {
+  color: inherit;
+  text-decoration: none;
 }
