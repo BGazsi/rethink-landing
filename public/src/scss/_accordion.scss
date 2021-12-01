@@ -1,0 +1,22 @@
+.accordion-item {
+  border: none;
+  border-bottom: 1px solid #D6DFEE;
+}
+
+.accordion-button {
+  flex-direction: row-reverse;
+  justify-content: left;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  &:not(.collapsed) {
+    color: $dark;
+    background: #ffffff;
+    box-shadow: none;
+  }
+
+  &::after {
+    margin-left: 0;
+    margin-right: 16px;
+  }
+}

@@ -1,0 +1,23 @@
+.menu {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  position: sticky;
+  top: 16px;
+  align-self: flex-start;
+  margin-right: 16px;
+
+  li {
+    height: 56px;
+    border-left: 1px solid #D6DFEE;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding-left: 24px;
+    margin: 0;
+
+    &.active {
+      border-left: 3px solid $blue;
+    }
+  }
+}

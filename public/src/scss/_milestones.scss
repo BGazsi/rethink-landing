@@ -1,0 +1,43 @@
+.milestones {
+  background-color: #F3F9FF;
+  padding: 23px 0 64px 30px;
+
+  h3 {
+    margin: 0 0 21px 0;
+  }
+
+  .milestone-inner {
+    background-color: #ffffff;
+    background-image: url("../img/timeline-bg.png");
+    margin-left: -30px;
+    padding-left: 48px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    display: flex;
+
+    @include media-breakpoint-up(sm) {
+      max-width: 360px;
+    }
+    @include media-breakpoint-up(md) {
+      max-width: 360px;
+    }
+    @include media-breakpoint-up(lg) {
+      max-width: 640px;
+    }
+    @include media-breakpoint-up(xl) {
+      max-width: 820px;
+    }
+    @include media-breakpoint-up(xxl) {
+      max-width: 1000px;
+    }
+  }
+
+  .milestone-names {
+    margin-left: -10px;
+  }
+
+  .timeline-container {
+    padding-left: 30px;
+    overflow: scroll;
+  }
+}

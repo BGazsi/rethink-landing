@@ -1,10 +1,21 @@
 $container-max-widths: (
-        sm: 540px,
-        md: 720px,
-        lg: 960px,
-        xl: 1140px,
-        xxl: 1320px
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1220px
 );
+
+
+$dark: #4e5261;
+$medium: #7a849c;
+$blue: #005efc;
+$green: #00b67d;
+$sticky-menu-width: 160px;
+
+$accordion-button-active-icon: url("data:image/svg+xml,<svg width='10' height='10' viewBox='0 0 10 3' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M0 0.5H10V2.5H0V0.5Z' fill='#C4C4C4'/></svg>");
+$accordion-button-icon:  url("data:image/svg+xml,<svg width='10' height='10' viewBox='0 0 10 11' fill='none' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='M4 6.5V10.5H6V6.5H10V4.5H6V0.5H4V4.5H0V6.5H4Z' fill='#C4C4C4'/></svg>");
+
 
 @import "node_modules/bootstrap/scss/bootstrap-reboot";
 @import "node_modules/bootstrap/scss/bootstrap-utilities";
@@ -16,11 +27,17 @@ $container-max-widths: (
 @import "node_modules/bootstrap/scss/images";
 @import "node_modules/bootstrap/scss/accordion";
 @import "node_modules/bootstrap/scss/badge";
+@import "node_modules/bootstrap/scss/transitions";
 
-$dark: #4e5261;
-$medium: #7a849c;
-$blue: #005efc;
-$green: #00b67d;
+// custom
+@import "./hero";
+@import "./badge";
+@import "./link";
+@import "./menu";
+@import "./list";
+@import "./milestones";
+@import "./scrollable-row";
+@import "./accordion";
 
 h1, h2, h3 {
   font-family: 'Poppins', sans-serif;
@@ -33,10 +50,21 @@ h1 {
 
 h2 {
   font-size: 24px;
+  margin-bottom: 32px;
+
+  &.top-margin {
+    margin-top: 100px;
+  }
 }
 
 h3 {
   font-size: 16px;
+  margin: 32px 0;
+}
+
+body {
+  //background: #e5e5e5;
+  padding-bottom: 50px;
 }
 
 body, p {
@@ -45,12 +73,52 @@ body, p {
   font-size: 14px;
 }
 
+p {
+  line-height: 21px;
+}
+
 strong {
   font-weight: 600;
 }
 
-.menu {
-  font-family: 'Inter', sans-serif;
-  font-weight: 600;
-  text-transform: uppercase;
+.main-container {
+  margin-top: 96px;
+  display: flex;
+ }
+
+.small-content-container {
+  max-width: 600px;
+}
+
+.regular-spacing-top {
+  margin-top: 32px;
+}
+
+.separator {
+  background-image: url("../img/separator.png");
+  width: 100%;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-position: left center;
+
+  @media(max-width: 1560px) {
+    background-position: right;
+  }
+}
+
+.content {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.top-border-column {
+  margin-top: 32px;
+  border-top: 3px solid $blue;
+  margin-right: 24px;
+  padding: 0 24px;
+}
+
+.anchor-link {
+  margin-top: -16px;
+  padding-top: 16px;
 }
